@@ -84,9 +84,9 @@ Route::group([
     Route::post('/index', [CategoriesController::class, 'index'])->name('index');
 });
 
-// Route::group(['prefix' => '/parents', 'as' => 'parents',], function () {
-//     Route::post('/index', [ParentsController::class, 'index'])->name('index');
-// });
+Route::group(['prefix' => '/parents', 'as' => 'parents',], function () {
+    Route::post('/index', [ParentsController::class, 'index'])->name('index');
+});
 
 
 
